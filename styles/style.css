@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
-@import url("https://fonts.cdnfonts.com/css/miama");
-/* font-family: "Miama", sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Arizonia&display=swap");
 
 * {
   margin: 0;
@@ -12,6 +11,33 @@ body {
   margin: 0 auto;
 }
 
+.btn-primary {
+  width: 180px;
+  border-radius: 42px;
+  padding: 16px 10px 16px 10px;
+  background: rgb(230, 83, 60);
+  border: none;
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-right: 14px;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  width: 180px;
+  padding: 16px 10px 16px 10px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 42px;
+  color: rgb(255, 255, 255);
+  background-color: black;
+  font-family: Inter;
+  font-size: 1.125rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
 /* header */
 header {
   display: flex;
@@ -21,7 +47,9 @@ header {
   background: linear-gradient(
     180deg,
     rgb(17, 17, 17),
-    rgba(119, 119, 119, 0) 100%
+    rgb(24, 24, 24) 25%,
+    rgb(34, 34, 34) 50%,
+    rgb(17, 17, 17) 100%
   );
 }
 /* nav-bar */
@@ -58,6 +86,7 @@ header {
 .nav-item #home {
   border-radius: 46px;
   background: rgb(230, 83, 60);
+  font-weight: bold;
 }
 
 .nav-item p {
@@ -70,6 +99,7 @@ header {
   display: none;
   font-size: 1.6rem;
   cursor: pointer;
+  color: rgb(255, 255, 255);
 }
 
 @media screen and (max-width: 576px) {
@@ -86,3 +116,150 @@ header {
 }
 
 /* navbar ends */
+
+/* banner */
+.banner {
+  width: 73.5%;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.banner-title {
+  width: 400px;
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 5rem;
+  font-weight: 900;
+  margin-bottom: 28px;
+  word-spacing: 1.2rem;
+}
+
+.banner-text {
+  max-width: 630px;
+  height: 580px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.shape {
+  font-family: "Arizonia", cursive;
+  font-weight: bolder;
+}
+
+.banner-text p {
+  width: 380px;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 28px;
+  line-height: 1.6rem;
+  text-align: justify;
+}
+
+.buttons {
+  display: flex;
+}
+
+.banner-img {
+  position: relative;
+}
+
+.banner-img img {
+  /* position: absolute;
+  right: -10px; */
+}
+
+.banner-img .workout-video {
+  width: 160px;
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 5px;
+  border: 2px solid red;
+  padding: 17px 24px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  left: 220px;
+  top: 130px;
+}
+
+.banner-img .workout-video .workout {
+  color: rgba(255, 255, 255, 0.65);
+  font-family: Inter;
+  font-size: 0.8125rem;
+  font-weight: 400;
+}
+
+.tutorial {
+  width: 180px;
+  color: rgb(250, 250, 249);
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-weight: 900;
+  display: flex;
+  gap: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(4px);
+  background: rgba(48, 48, 48, 0.54);
+  padding: 20px 24px;
+  z-index: 11;
+  position: absolute;
+  left: -75px;
+  bottom: 65px;
+}
+
+.tutorial .tut {
+  color: rgba(239, 237, 232, 0.65);
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.tutorial .circle {
+  height: 2.5rem;
+  width: 2.5rem;
+  background: rgb(230, 83, 60);
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 576px) {
+  .banner {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 93%;
+  }
+  .banner-title {
+    font-size: 3.25rem;
+    width: 70%;
+  }
+  .banner-text {
+    height: auto;
+  }
+  .banner-text p {
+    width: 67%;
+    font-size: 1.35rem;
+    text-align: left;
+  }
+  #club {
+    display: none;
+  }
+  .buttons {
+    justify-content: space-between;
+  }
+  .banner-img .workout-video {
+    top: 50px;
+    left: 200px;
+  }
+  .tutorial {
+    bottom: 245px;
+    left: 10px;
+  }
+}
