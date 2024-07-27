@@ -497,6 +497,7 @@ header {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  width: 1440px;
 }
 
 #bmi h2 {
@@ -527,7 +528,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding-bottom: 50px; */
 }
 
 .chart {
@@ -650,4 +650,66 @@ input {
 
 #bmi button {
   margin-bottom: 50px;
+}
+
+@media screen and (max-width: 576px) {
+  #bmi {
+    width: 100%;
+  }
+  #bmi h2 {
+    width: 90%;
+    padding-left: 20px;
+    font-size: 2rem;
+  }
+  #bmi p {
+    width: 80%;
+    padding-left: 20px;
+    margin-bottom: 40px;
+  }
+  .bmi-content {
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .chart {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .chart h4 {
+    padding-left: 20px;
+    font-size: 1rem;
+    margin-bottom: 25px;
+  }
+  .table-container {
+    padding-left: 20px;
+  }
+  .table-container table {
+    width: 80%;
+  }
+  thead {
+    font-size: 1rem;
+  }
+  tbody {
+    font-size: 0.875rem;
+  }
+  .calculator {
+    padding-top: 0px;
+  }
+
+  .calculator h4 {
+    font-size: 1rem;
+    margin-left: 20px;
+  }
+  form {
+    margin-left: 20px;
+  }
+  input {
+    width: 46%;
+  }
+  #sex {
+    width: 46%;
+  }
+  #activity {
+    width: 96%;
+  }
 }
