@@ -491,3 +491,163 @@ header {
     margin-bottom: 30px;
   }
 }
+/* BMI */
+#bmi {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#bmi h2 {
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 120%;
+  margin-bottom: 14px;
+  text-align: left;
+  padding-left: 425px;
+}
+
+#bmi > p {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 88px;
+  padding-left: 425px;
+  width: 70%;
+}
+
+.bmi-content {
+  background: rgb(34, 34, 34);
+  width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding-bottom: 50px; */
+}
+
+.chart {
+  width: 40%;
+  padding-top: 50px;
+}
+
+.chart h4 {
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 1.75rem;
+  font-weight: 900;
+  line-height: 120%;
+  padding-left: 35%;
+  margin-bottom: 52px;
+}
+
+.table-container {
+  padding-left: 35%;
+}
+
+table,
+td,
+td {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-collapse: collapse;
+}
+thead {
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+tbody {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+td {
+  padding: 15px 18px;
+}
+
+.calculator {
+  padding-top: 140px;
+}
+
+.calculator h4 {
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 1.75rem;
+  font-weight: 900;
+  line-height: 120%;
+  margin-bottom: 15px;
+}
+
+.calculator p {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  width: 75%;
+  margin-bottom: 35px;
+}
+
+input {
+  padding: 12px 40px 12px 20px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  margin-right: 12px;
+  margin-bottom: 12px;
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+#sex {
+  padding: 10px 40px 10px 20px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  width: 31%;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 22px;
+  border: none;
+}
+
+#activity {
+  padding: 10px 40px 10px 20px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  width: 64%;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 22px;
+  border: none;
+  margin-bottom: 35px;
+}
+
+#sex option {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+#bmi button {
+  margin-bottom: 50px;
+}
