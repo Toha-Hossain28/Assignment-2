@@ -31,7 +31,7 @@ body {
   border: 1px solid rgb(255, 255, 255);
   border-radius: 42px;
   color: rgb(255, 255, 255);
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0);
   font-family: Inter;
   font-size: 1.125rem;
   font-weight: 600;
@@ -126,7 +126,7 @@ header {
 }
 
 .banner-title {
-  width: 400px;
+  width: 500px;
   color: rgb(255, 255, 255);
   font-family: Inter;
   font-size: 5rem;
@@ -136,7 +136,7 @@ header {
 }
 
 .banner-text {
-  max-width: 630px;
+  width: 400px;
   height: 580px;
   display: flex;
   flex-direction: column;
@@ -173,7 +173,7 @@ header {
 }
 
 .banner-img .workout-video {
-  width: 160px;
+  width: 190px;
   color: rgb(255, 255, 255);
   font-family: Inter;
   font-size: 2.5rem;
@@ -184,10 +184,10 @@ header {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   backdrop-filter: blur(4px);
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(48, 48, 48, 0.54);
   position: absolute;
-  left: 220px;
-  top: 130px;
+  right: -50px;
+  top: 100px;
 }
 
 .banner-img .workout-video .workout {
@@ -195,25 +195,28 @@ header {
   font-family: Inter;
   font-size: 0.8125rem;
   font-weight: 400;
+  letter-spacing: 0.04rem;
 }
 
 .tutorial {
-  width: 180px;
+  width: 210px;
   color: rgb(250, 250, 249);
   font-family: Inter;
   font-size: 1.5rem;
   font-weight: 900;
   display: flex;
+  align-items: center;
   gap: 12px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   backdrop-filter: blur(4px);
   background: rgba(48, 48, 48, 0.54);
-  padding: 20px 24px;
+  /* background: rgba(255, 255, 255, 0.1); */
+  padding: 17px 24px;
   z-index: 11;
   position: absolute;
-  left: -75px;
-  bottom: 65px;
+  right: 60%;
+  bottom: 12%;
 }
 
 .tutorial .tut {
@@ -230,6 +233,10 @@ header {
   border-radius: 50%;
 }
 
+.video-tut {
+  width: 100%;
+}
+
 @media screen and (max-width: 576px) {
   .banner {
     flex-direction: column;
@@ -238,13 +245,14 @@ header {
   }
   .banner-title {
     font-size: 3.25rem;
-    width: 70%;
+    width: 90%;
+    word-spacing: normal;
   }
   .banner-text {
     height: auto;
   }
   .banner-text p {
-    width: 67%;
+    width: 82%;
     font-size: 1.35rem;
     text-align: left;
   }
@@ -252,15 +260,28 @@ header {
     display: none;
   }
   .buttons {
-    justify-content: space-between;
+    justify-content: flex-start;
   }
   .banner-img .workout-video {
-    top: 50px;
-    left: 230px;
+    top: 12%;
+    left: 55%;
+    width: 150px;
+    padding: 12px 18px;
   }
   .tutorial {
-    bottom: 245px;
-    left: 40px;
+    width: 160px;
+    padding: 15px 17px;
+    /* padding-right: 5px; */
+    left: 5%;
+    bottom: 42%;
+  }
+  .video-tut {
+    width: 80px;
+  }
+
+  .tutorial .circle {
+    height: 30px;
+    width: 30px;
   }
   .banner-img img {
     margin-left: 30px;
@@ -274,6 +295,7 @@ header {
   }
   .tutorial .tut {
     font-size: 0.75rem;
+    margin-top: 5px;
   }
   .tutorial {
     font-size: 1.125rem;
@@ -301,6 +323,7 @@ header {
   font-weight: 900;
   line-height: 120%;
   margin-bottom: 14px;
+  text-align: center;
 }
 #habit > p {
   color: rgba(255, 255, 255, 0.5);
