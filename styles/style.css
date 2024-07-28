@@ -168,11 +168,6 @@ header {
   position: relative;
 }
 
-.banner-img img {
-  /* position: absolute;
-  right: -10px; */
-}
-
 .banner-img .workout-video {
   width: 190px;
   color: rgb(255, 255, 255);
@@ -272,7 +267,6 @@ header {
   .tutorial {
     width: 160px;
     padding: 15px 17px;
-    /* padding-right: 5px; */
     left: 5%;
     bottom: 42%;
   }
@@ -310,7 +304,7 @@ header {
   padding-bottom: 100px;
 }
 #habit {
-  width: 73.5%;
+  max-width: 1060px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -460,19 +454,17 @@ header {
     flex-direction: column;
     height: auto;
     width: 93%;
-    padding: 35px;
-    padding-bottom: 40px;
+    padding: 35px 20px 40px 20px;
   }
   .extra-text-cont {
     width: 90%;
   }
   .extra-img-cont {
     width: 90%;
-    height: 170px;
+    height: 192px;
     background-size: cover;
     background-size: 135%;
     background-position: -100px 0px;
-    padding-bottom: 35px;
   }
 
   .extra-text-cont h2 {
@@ -763,7 +755,7 @@ input {
   padding: 20px;
 }
 
-.card {
+.team-card {
   width: 325px;
   height: 270px;
   border-radius: 18px;
@@ -792,7 +784,7 @@ input {
   left: 20px;
 }
 
-.card-container {
+.team-card-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
@@ -869,10 +861,10 @@ input {
     margin-top: 60px;
   }
   .team-title {
-    width: 72px%;
+    width: 72%;
     margin-bottom: 35px;
   }
-  .card-container {
+  .team-card-container {
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas:
       "one"
