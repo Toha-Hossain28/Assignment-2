@@ -722,6 +722,8 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 88px;
+  margin-bottom: 66px;
 }
 
 .team-content {
@@ -860,4 +862,53 @@ input {
     url("../images/trainer6.png");
   background-position: center;
   background-size: cover;
+}
+
+@media screen and (max-width: 576px) {
+  #team {
+    margin-top: 60px;
+  }
+  .team-title {
+    width: 72px%;
+    margin-bottom: 35px;
+  }
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      "one"
+      "two"
+      "three"
+      "four";
+    gap: 20px;
+  }
+  .team-desc {
+    width: 85%;
+    padding: 20px;
+  }
+  #c1,
+  #c4 {
+    display: none;
+  }
+  #c2 {
+    grid-area: one;
+  }
+  #c5 {
+    grid-area: two;
+  }
+  #c3 {
+    grid-area: three;
+  }
+  #c6 {
+    grid-area: four;
+  }
+  .card {
+    width: 100%;
+  }
+}
+
+.team-title h3 {
+  font-size: 2rem;
+}
+.team-title p {
+  font-size: 0.875rem;
 }
