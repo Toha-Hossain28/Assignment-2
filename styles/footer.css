@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/miama");
+/* footer */
+footer {
+  background: rgba(255, 255, 255, 0.1);
+  max-width: 1440px;
+}
+
+.footer-content {
+  display: flex;
+  padding-top: 66px;
+}
+.footer {
+  max-width: 1060px;
+  /* border: 2px solid red; */
+  margin: 0 auto;
+}
+
+.footext {
+  width: 42%;
+  margin-right: 85px;
+}
+
+.footext h2 {
+  color: rgb(230, 83, 60);
+  font-family: Inter;
+  font-size: 4.375rem;
+  font-weight: 800;
+  line-height: 120%;
+  font-style: italic;
+  margin-bottom: 22px;
+}
+
+.footext p {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  margin-bottom: 75px;
+}
+
+.foolinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  margin-bottom: 80px;
+}
+
+.col h3 {
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 40px;
+}
+
+.col > .link {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 120%;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+footer hr {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 35px;
+}
+
+.copy {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  padding-bottom: 35px;
+}
+
+@media screen and (max-width: 576px) {
+  footer {
+    padding-left: 20px;
+  }
+  .footer-content {
+    flex-direction: column;
+  }
+  .foolinks {
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+  .footext {
+    width: 80%;
+  }
+  hr {
+    width: 90%;
+  }
+  .copy {
+    text-align: left;
+  }
+}
