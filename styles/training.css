@@ -13,6 +13,7 @@
   font-size: 48px;
   font-weight: 900;
   line-height: 120%;
+  margin-bottom: 20px;
 }
 
 #training p {
@@ -23,6 +24,7 @@
   line-height: 24px;
   letter-spacing: 0.3px;
   width: 64%;
+  margin-bottom: 20px;
 }
 
 .images {
