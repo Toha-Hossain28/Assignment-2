@@ -35,7 +35,7 @@
 .nav-item #home {
   border-radius: 46px;
   background: rgb(230, 83, 60);
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 .nav-item p {
