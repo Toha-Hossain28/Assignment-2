@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/miama");
+
+#price {
+  max-width: 1060px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+#price > h1 {
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 120%;
+  margin-bottom: 14px;
+  text-align: center;
+}
+
+#price > p {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 58px;
+  width: 450px;
+  text-align: center;
+}
+
+.price-card-container {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.price-card {
+  width: 31%;
+  background-color: rgb(34, 34, 34);
+  backdrop-filter: blur(4px);
+  padding: 50px 20px;
+  border-radius: 18px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.price-card > p {
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.price-card > h1 {
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+span {
+  font-size: 0.75rem;
+}
+
+.perks {
+  /* width: 80%; */
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.perk {
+  font-size: 0.75rem;
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.perk > i {
+  color: rgb(230, 83, 60);
+  padding-right: 5px;
+}
+
+.price-card button {
+  width: 130px;
+  border-radius: 42px;
+  padding: 12px 6px;
+  background: rgb(230, 83, 60);
+  border: none;
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-right: 14px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+  /* align-self: center; */
+}
+
+.price-card:hover {
+  transform: scale(1.1);
+}
+.price-card button:hover {
+  transform: scale(1.1);
+  box-shadow: 4px -4px rgba(5, 5, 5, 0.315) inset;
+  color: rgb(230, 83, 60);
+  background: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 576px) {
+  .price-card-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .price-card {
+    width: 85%;
+  }
+  #price > h1 {
+    font-size: 2rem;
+  }
+  #price > p {
+    font-size: 0.875rem;
+    width: 80%;
+  }
+  .price-card > p {
+    font-size: 1.125rem;
+  }
+  .price-card > h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  .perk {
+    font-size: 1rem;
+  }
+  .price-card button {
+    font-size: 1rem;
+    width: 160px;
+  }
+}
