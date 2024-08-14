@@ -9,6 +9,10 @@
   max-width: 1440px;
 }
 
+.bmi-heading {
+  padding-left: 20px;
+}
+
 #bmi h2 {
   color: rgb(255, 255, 255);
   font-family: Inter;
@@ -17,18 +21,17 @@
   line-height: 120%;
   margin-bottom: 14px;
   text-align: left;
-  margin-right: 230px;
+  /* padding-left: 20px; */
 }
 
-#bmi > p {
+.bmi-heading > p {
   color: rgba(255, 255, 255, 0.5);
   font-family: Inter;
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 24px;
   margin-bottom: 88px;
-  width: 43%;
-  margin-left: 32px;
+  width: 70%;
 }
 
 .bmi-content {
@@ -107,6 +110,7 @@ td {
   letter-spacing: 0.3px;
   width: 75%;
   margin-bottom: 35px;
+  padding-left: 20px;
 }
 
 form {
@@ -177,9 +181,9 @@ input {
     font-size: 2rem;
     margin: 0;
   }
-  #bmi p {
+  .bmi-heading p {
     width: 80%;
-    padding-left: 20px;
+    /* padding-left: 20px; */
     margin-bottom: 40px;
     margin-left: 0;
     margin-top: 10px;
